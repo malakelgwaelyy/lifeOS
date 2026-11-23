@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a1020" />
+    <title>LifeOS</title>
+    <link rel="stylesheet" href="styles.css?v=3" />
+  </head>
+  <body>
+    <main id="authGate" class="auth-gate" aria-live="polite">
+      <div class="auth-loading"><span class="brand-mark">◎</span><strong>LifeOS</strong><span>Connecting securely…</span></div>
+    </main>
+    <div class="app-shell" id="appShell" hidden>
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">◎</div>
+          <div>
+            <div class="brand-name">LifeOS</div>
+            <span class="brand-sub">Personal system</span>
+          </div>
+        </div>
+
+        <nav id="sidebarNav" class="nav-list" aria-label="Sidebar navigation"></nav>
+
+        <div class="sidebar-footer">
+          <strong>Focus insight</strong>
+          <div style="margin-top:10px; color: var(--muted);">
+            Protect attention. Clear priorities. Steady progress.
+          </div>
+        </div>
+      </aside>
+
+      <div class="main-panel">
+        <header class="topbar">
+          <div class="topbar-left">
+            <div class="topbar-meta" id="topbarMeta">Today</div>
+          </div>
+
+          <label class="topbar-search" aria-label="Global search">
+            <span>⌕</span>
+            <input id="globalSearch" type="search" placeholder="Search tasks..." />
+          </label>
+
+          <div class="topbar-actions">
+            <button class="primary-btn" data-action="quick-add">+ Quick add</button>
+          </div>
+        </header>
+
+        <main id="mainContent" class="main-content"></main>
+      </div>
+    </div>
+
+    <div id="modalBackdrop" class="modal-backdrop" hidden></div>
+
+    <script src="firebase-config.js"></script>
+    <script src="app.js"></script>
+    <script src="firebase-sync.js"></script>
+  </body>
+</html>
