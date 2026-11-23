@@ -1,2 +1,0 @@
-# lifeOS
-YOUR DAILY TRACKER
