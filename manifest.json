@@ -1,0 +1,13 @@
+{
+  "name": "LifeOS — Personal Operating System",
+  "short_name": "LifeOS",
+  "description": "Your complete personal operating system — Learning, Worship, Fitness, Work, Content, Tasks.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0d0f18",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "screenshots": [],
+  "categories": ["productivity", "lifestyle", "education"],
+  "lang": "en"
+}
